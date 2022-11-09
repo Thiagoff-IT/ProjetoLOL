@@ -1,1 +1,116 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>Consulta pedido</title>
+  </head>
+  <body>
+    <div class="columns">
+      <div class="column is-narrow">
+        <div class="box" style="width: 200px; height: 748px;">
+          <p class="title is-5">Principal</p>
+          <p class="subtitle">Menu Lateral</p>
+          <button class="button is-white">
+            <span class="icon">
+              <i class="fa-solid fa-user"></i>
+            </span>
+            <span>Realizar pedidos</span>
+          </button>
+          <button class="button is-white">
+            <span class="icon is-small">
+              <i class="fa-sharp fa-solid fa-paperclip"></i>
+            </span>
+            <span>Histórico Pedidos</span>
+          </button>
+          <button class="button is-white">
+            <span class="icon is-small">
+              <i class="fa-sharp fa-solid fa-building-columns"></i>
+            </span>
+            <span>Dados Bancários</span>
+          </button>
+          <button class="button is-white">
+            <span class="icon is-small">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+            </span>
+            <span>Cadastrar peças</span>
+          </button>
+          <button class="button is-white">
+            <span class="icon is-small">
+              <i class="fa-solid fa-motorcycle"></i>
+            </span>
+            <span>Motoboy</span>
+          </button>
+        </div>
+      </div>
+      <div class="column">
+        <div class="box">
+          <p class="title is-5">Consulta de Pedido</p>
+          <p>ID XXXX</p>
+        </div>
+        <div class="box" style="height: 400px;">
+          <p class="title is-5">Peças para Lavar</p>
+          <div class="content">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button
+                  class="button"
+                  aria-haspopup="true"
+                  aria-controls="dropdown-menu4"
+                >
+                  <span>Hover me</span>
+                  <span class="icon is-small">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                <div class="dropdown-content">
+                  <div class="dropdown-item">
+                    <p>
+                      You can insert <strong>any type of content</strong> within
+                      the dropdown menu.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="button">+</button>
+          <input class="input" type="number" placeholder="1" />
+          <button class="button">-</button>
+        </div>
+        <div class="box" style="height: 190px;">
+          <form>
+            <div class="field">
+              <label class="label">Preço total:</label>
+              <p>Prazo de Lavagem: XX/XX/XXXX</p>
+              <div class="control">
+                <input class="input" type="number" placeholder="R$ XX.XX" />
+              </div>
+              <br />
+              <button class="button is-danger is-rounded">
+                Cancelar
+              </button>
+
+              <button class="button is-success is-rounded">
+                Confirmar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
